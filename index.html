@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Gradient Generator</title>
+  </head>
+  <body>
+    <script defer src="./gradientGenerator.js"></script>
+    <section>
+      <div class="generator">
+        <h4>gradient generator</h4>
+        <form>
+          <span>
+            <label for="color1">first color: </label>
+            <input type="number" name="color1" id="color1" />
+
+            <label for="color2">second color: </label>
+            <input type="number" name="color2" id="color2" />
+
+            <div class="options">
+              <button data-direction>top - bottom</button>
+              <button data-direction>bottom - top</button>
+              <button data-direction>top - left</button>
+              <button data-direction>top - right</button>
+              <button data-direction>bottom - left</button>
+              <button data-direction>bottom - right</button>
+              <button data-direction>left - right</button>
+              <button data-direction>right - left</button>
+            </div>
+          </span>
+          <button type="submit">generate gradient</button>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
