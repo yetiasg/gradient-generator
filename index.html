@@ -9,28 +9,158 @@
   </head>
   <body>
     <script defer src="./gradientGenerator.js"></script>
-    <section>
+    <section class="gradient">
       <div class="generator">
         <h4>gradient generator</h4>
         <form>
           <span>
-            <label for="color1">first color: </label>
-            <input type="number" name="color1" id="color1" />
+            <div>
+              <input type="color" name="color1" id="color1" value="#ffffff" />
+              <label for="color1">first color: </label>
+            </div>
 
-            <label for="color2">second color: </label>
-            <input type="number" name="color2" id="color2" />
-
-            <div class="options">
-              <button data-direction>top - bottom</button>
-              <button data-direction>bottom - top</button>
-              <button data-direction>top - left</button>
-              <button data-direction>top - right</button>
-              <button data-direction>bottom - left</button>
-              <button data-direction>bottom - right</button>
-              <button data-direction>left - right</button>
-              <button data-direction>right - left</button>
+            <div>
+              <input type="color" name="color2" id="color2" value="#024579" />
+              <label for="color2">second color: </label>
             </div>
           </span>
+          <div class="options">
+            <button data-direction="bottom to top">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23.387"
+                height="24"
+                viewBox="0 0 23.387 24"
+              >
+                <path
+                  id="FontAwsome_arrow-up_"
+                  data-name="FontAwsome (arrow-up)"
+                  d="M7.217,45.746,6.028,44.557a1.28,1.28,0,0,1,0-1.816L16.435,32.328a1.28,1.28,0,0,1,1.816,0L28.659,42.735a1.28,1.28,0,0,1,0,1.816L27.47,45.74a1.287,1.287,0,0,1-1.837-.021L19.489,39.27V54.664A1.282,1.282,0,0,1,18.2,55.95H16.489A1.282,1.282,0,0,1,15.2,54.664V39.27L9.054,45.724a1.278,1.278,0,0,1-1.837.021Z"
+                  transform="translate(-5.65 -31.95)"
+                  fill="#afafaf"
+                />
+              </svg>
+            </button>
+            <button data-direction="top to bottom">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="23.392"
+                height="24"
+                viewBox="0 0 23.392 24"
+              >
+                <path
+                  id="FontAwsome_arrow-down_"
+                  data-name="FontAwsome (arrow-down)"
+                  d="M27.475,42.2l1.189,1.189a1.28,1.28,0,0,1,0,1.816L18.257,55.622a1.28,1.28,0,0,1-1.816,0L6.028,45.209a1.28,1.28,0,0,1,0-1.816L7.217,42.2a1.287,1.287,0,0,1,1.837.021L15.2,48.68V33.286A1.282,1.282,0,0,1,16.489,32H18.2a1.282,1.282,0,0,1,1.286,1.286V48.68l6.149-6.455a1.278,1.278,0,0,1,1.837-.021Z"
+                  transform="translate(-5.65 -32)"
+                  fill="#afafaf"
+                />
+              </svg>
+            </button>
+            <button data-direction="left to right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24.624"
+                height="24"
+                viewBox="0 0 24.624 24"
+              >
+                <path
+                  id="FontAwsome_arrow-right_"
+                  data-name="FontAwsome (arrow-right)"
+                  d="M10.469,39.258l1.22-1.22a1.314,1.314,0,0,1,1.863,0L24.236,48.716a1.314,1.314,0,0,1,0,1.863L13.553,61.263a1.314,1.314,0,0,1-1.863,0l-1.22-1.22a1.32,1.32,0,0,1,.022-1.885l6.622-6.309H1.319A1.316,1.316,0,0,1,0,50.529V48.771a1.316,1.316,0,0,1,1.319-1.319H17.114l-6.622-6.309A1.311,1.311,0,0,1,10.469,39.258Z"
+                  transform="translate(0 -37.65)"
+                  fill="#afafaf"
+                />
+              </svg>
+            </button>
+            <button data-direction="right to left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24.624"
+                height="24"
+                viewBox="0 0 24.624 24"
+              >
+                <path
+                  id="FontAwsome_arrow-left_"
+                  data-name="FontAwsome (arrow-left)"
+                  d="M14.1,60.042l-1.22,1.22a1.314,1.314,0,0,1-1.863,0L.337,50.584a1.314,1.314,0,0,1,0-1.863L11.021,38.037a1.314,1.314,0,0,1,1.863,0l1.22,1.22a1.32,1.32,0,0,1-.022,1.885L7.46,47.452H23.255a1.316,1.316,0,0,1,1.319,1.319v1.759a1.316,1.316,0,0,1-1.319,1.319H7.46l6.622,6.309A1.311,1.311,0,0,1,14.1,60.042Z"
+                  transform="translate(0.05 -37.65)"
+                  fill="#afafaf"
+                />
+              </svg>
+            </button>
+            <button data-direction="bottom to left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34.382"
+                height="34.382"
+                viewBox="0 0 34.382 34.382"
+              >
+                <path
+                  id="FontAwsome_arrow-left_"
+                  data-name="FontAwsome (arrow-left)"
+                  d="M14.154,22.393l-1.22,1.22a1.314,1.314,0,0,1-1.863,0L.387,12.934a1.314,1.314,0,0,1,0-1.863L11.071.387a1.314,1.314,0,0,1,1.863,0l1.22,1.22a1.32,1.32,0,0,1-.022,1.885L7.51,9.8H23.3a1.316,1.316,0,0,1,1.319,1.319v1.759A1.316,1.316,0,0,1,23.3,14.2H7.51l6.622,6.309A1.311,1.311,0,0,1,14.154,22.393Z"
+                  transform="translate(16.971) rotate(45)"
+                  fill="#afafaf"
+                />
+              </svg>
+            </button>
+            <button data-direction="bottom to right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34.382"
+                height="34.382"
+                viewBox="0 0 34.382 34.382"
+              >
+                <path
+                  id="FontAwsome_arrow-left_"
+                  data-name="FontAwsome (arrow-left)"
+                  d="M14.154,22.392l-1.22,1.22a1.314,1.314,0,0,1-1.863,0L.387,12.934a1.314,1.314,0,0,1,0-1.863L11.071.387a1.314,1.314,0,0,1,1.863,0l1.22,1.22a1.32,1.32,0,0,1-.022,1.885L7.51,9.8H23.3a1.316,1.316,0,0,1,1.319,1.319v1.759A1.316,1.316,0,0,1,23.3,14.2H7.51l6.622,6.309A1.311,1.311,0,0,1,14.154,22.392Z"
+                  transform="translate(34.382 16.971) rotate(135)"
+                  fill="#afafaf"
+                />
+              </svg>
+            </button>
+            <button data-direction="top to right">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34.382"
+                height="34.382"
+                viewBox="0 0 34.382 34.382"
+              >
+                <path
+                  id="FontAwsome_arrow-left_"
+                  data-name="FontAwsome (arrow-left)"
+                  d="M14.154,22.393l-1.22,1.22a1.314,1.314,0,0,1-1.863,0L.387,12.934a1.314,1.314,0,0,1,0-1.863L11.071.387a1.314,1.314,0,0,1,1.863,0l1.22,1.22a1.32,1.32,0,0,1-.022,1.885L7.51,9.8H23.3a1.316,1.316,0,0,1,1.319,1.319v1.759A1.316,1.316,0,0,1,23.3,14.2H7.51l6.622,6.309A1.311,1.311,0,0,1,14.154,22.393Z"
+                  transform="translate(17.412 34.382) rotate(-135)"
+                  fill="#afafaf"
+                  class="selectedDirection"
+                />
+              </svg>
+            </button>
+            <button data-direction="top to left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34.382"
+                height="34.382"
+                viewBox="0 0 34.382 34.382"
+              >
+                <path
+                  id="FontAwsome_arrow-left_"
+                  data-name="FontAwsome (arrow-left)"
+                  d="M14.154,22.392l-1.22,1.22a1.314,1.314,0,0,1-1.863,0L.387,12.934a1.314,1.314,0,0,1,0-1.863L11.071.387a1.314,1.314,0,0,1,1.863,0l1.22,1.22a1.32,1.32,0,0,1-.022,1.885L7.51,9.8H23.3a1.316,1.316,0,0,1,1.319,1.319v1.759A1.316,1.316,0,0,1,23.3,14.2H7.51l6.622,6.309A1.311,1.311,0,0,1,14.154,22.392Z"
+                  transform="translate(0 17.412) rotate(-45)"
+                  fill="#afafaf"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="outputGradient">
+            <p>
+              background-image: linear-gradient(to right bottom, #ffffff,
+              #024579);
+            </p>
+          </div>
           <button type="submit">generate gradient</button>
         </form>
       </div>
